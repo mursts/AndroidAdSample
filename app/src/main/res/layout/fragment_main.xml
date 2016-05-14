@@ -14,4 +14,13 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"/>
 
+    <fragment
+        android:id="@+id/adview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:name="jp.mursts.android.androidadsample.AdmobFragment"
+        tools:layout="@layout/fragment_admob"
+        />
+
 </RelativeLayout>

@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <!--テストユニットID-->
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <!--テストデバイスID-->
+    <string name="test_device_id">xxxxxxxxxxxxx</string>
 </resources>

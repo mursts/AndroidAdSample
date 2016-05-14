@@ -34,14 +34,6 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder()
-                // テスト用デバイスを登録
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice(myDevice)
-                .build();
-        mAdView.loadAd(adRequest);
     }
 
     @Override
@@ -64,29 +56,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onPause() {
-        if (mAdView != null) {
-            mAdView.pause();
-        }
-        super.onPause();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        if (mAdView != null) {
-            mAdView.resume();
-        }
-    }
-
-    @Override
-    public void onDestroy() {
-        if (mAdView != null) {
-            mAdView.destroy();
-        }
-        super.onDestroy();
     }
 }
